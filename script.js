@@ -91,7 +91,7 @@ camera.position.z = 30;
 
 const particlesGeometry = new THREE.BufferGeometry();
 
-const particlesCount = 3000;
+const particlesCount = 8000;
 
 const positions = new Float32Array(
     particlesCount * 3
@@ -114,7 +114,7 @@ particlesGeometry.setAttribute(
 const particlesMaterial =
 new THREE.PointsMaterial({
 
-    size: 0.15
+    size: 0.08
 
 });
 
@@ -182,6 +182,88 @@ window.addEventListener(
             window.innerWidth,
             window.innerHeight
         );
+        // GSAP
+
+gsap.from(".hero h1",{
+y:100,
+opacity:0,
+duration:1.5
+});
+
+gsap.from(".hero h2",{
+y:50,
+opacity:0,
+duration:1.5,
+delay:.4
+});
+
+gsap.from(".hero-buttons",{
+y:50,
+opacity:0,
+duration:1.5,
+delay:.8
+});
+
+// CUSTOM CURSOR
+
+const cursor =
+document.querySelector(".cursor");
+
+document.addEventListener(
+"mousemove",
+(e)=>{
+
+cursor.style.left =
+e.clientX+"px";
+
+cursor.style.top =
+e.clientY+"px";
+
+}
+);
+
+// CARD 3D EFFECT
+
+document.querySelectorAll(
+".skill-card,.project-card"
+).forEach(card=>{
+
+card.addEventListener(
+"mousemove",
+(e)=>{
+
+const rect =
+card.getBoundingClientRect();
+
+const x =
+e.clientX - rect.left;
+
+const y =
+e.clientY - rect.top;
+
+const rotateY =
+((x/rect.width)-0.5)*20;
+
+const rotateX =
+((y/rect.height)-0.5)*-20;
+
+card.style.transform=
+`perspective(1000px)
+rotateX(${rotateX}deg)
+rotateY(${rotateY}deg)`;
+
+});
+
+card.addEventListener(
+"mouseleave",
+()=>{
+
+card.style.transform=
+"perspective(1000px) rotateX(0) rotateY(0)";
+
+});
+
+});
 
     }
 );
