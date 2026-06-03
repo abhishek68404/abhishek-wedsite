@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Abhishek | Portfolio</title>
+
+    <meta name="description" content="Official Portfolio Website of Abhishek">
+    <meta name="keywords" content="Abhishek, Portfolio, Developer, Gamer, Creator">
+    <meta name="author" content="Abhishek">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+
+    <div id="loader">
+
+        <div class="loader-content">
+
+            <h1>ABHISHEK</h1>
+
+            <div class="loading-bar">
+                <span></span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- 3D Background Canvas -->
+
+    <canvas id="bg"></canvas>
+
+    <!-- Navbar -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                ABHISHEK
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#skills">Skills</a></li>
+
+                <li><a href="#projects">Projects</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+            <div class="menu-btn">
+
+                ☰
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-small">
+                Welcome To My World
+            </p>
+
+            <h1>
+
+                Hi, I'm
+
+                <span>Abhishek</span>
+
+            </h1>
+
+            <h2 id="typing-text">
+                Creator • Gamer • Developer
+            </h2>
+
+            <p class="hero-description">
+
+                Building creative digital experiences,
+                websites, projects and content with passion.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn-primary">
+                    View Projects
+                </a>
+
+                <a href="#contact" class="btn-secondary">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="scroll-indicator">
+
+            <span></span>
+
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+
+    <section id="about" class="about">
+
+        <div class="section-title">
+
+            <h2>About Me</h2>
+
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-image">
+
+                <img src="profile.png" alt="Profile">
+
+            </div>
+
+            <div class="about-content">
+
+                <h3>Who Am I?</h3>
+
+                <p>
+
+                    Hello! My name is Abhishek.
+
+                    I am passionate about technology,
+                    web development, gaming and content creation.
+
+                    I love creating beautiful websites,
+                    learning new skills and exploring modern
+                    digital experiences.
+
+                </p>
+
+                <p>
+
+                    My goal is to build professional projects
+                    and continuously improve my development skills.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Skills Section -->
+
+    <section id="skills">
+
+        <div class="section-title">
+
+            <h2>Skills</h2>
+
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+
+                <h3>HTML</h3>
+
+            </div>
+
+            <div class="skill-card">
+
+                <h3>CSS</h3>
+
+            </div>
+
+            <div class="skill-card">
+
+                <h3>JavaScript</h3>
+
+            </div>
+
+            <div class="skill-card">
+
+                <h3>Python</h3>
+
+            </div>
+
+            <div class="skill-card">
+
+                <h3>Minecraft Building</h3>
+
+            </div>
+
+            <div class="skill-card">
+
+                <h3>Content Creation</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects Section -->
+
+    <section id="projects">
+
+        <div class="section-title">
+
+            <h2>Projects</h2>
+
+        </div>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    Modern personal website with animations.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Minecraft Builds</h3>
+
+                <p>
+                    Creative Minecraft structures and designs.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Python Projects</h3>
+
+                <p>
+                    Automation and utility tools.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact">
+
+        <div class="section-title">
+
+            <h2>Contact</h2>
+
+        </div>
+
+        <div class="contact-box">
+
+            <form>
+
+                <input type="text" placeholder="Your Name">
+
+                <input type="email" placeholder="Your Email">
+
+                <textarea placeholder="Your Message"></textarea>
+
+                <button type="submit">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>Abhishek</h3>
+
+        <p>
+
+            © 2026 All Rights Reserved
+
+        </p>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
