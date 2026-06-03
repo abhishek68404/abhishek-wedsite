@@ -478,4 +478,9 @@ font-size:3rem;
 color:#00e5ff;
 margin-bottom:10px;
 }
+  .project-card a{
+color:#00e5ff;
+text-decoration:none;
+font-weight:600;
+}
 }
