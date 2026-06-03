@@ -51,7 +51,74 @@ background:#222;
 overflow:hidden;
 border-radius:20px;
 }
+/* CUSTOM CURSOR */
 
+.cursor{
+width:20px;
+height:20px;
+border:2px solid #00e5ff;
+border-radius:50%;
+position:fixed;
+pointer-events:none;
+transform:translate(-50%,-50%);
+z-index:99999;
+box-shadow:0 0 20px #00e5ff;
+}
+
+/* SOCIAL BAR */
+
+.social-bar{
+position:fixed;
+right:20px;
+top:50%;
+transform:translateY(-50%);
+display:flex;
+flex-direction:column;
+gap:15px;
+z-index:1000;
+}
+
+.social-bar a{
+width:50px;
+height:50px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+text-decoration:none;
+color:white;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(15px);
+transition:.4s;
+}
+
+.social-bar a:hover{
+transform:translateX(-8px);
+box-shadow:0 0 25px #00e5ff;
+}
+
+header{
+box-shadow:0 0 30px rgba(0,229,255,.15);
+}
+
+.logo{
+text-shadow:0 0 15px rgba(0,229,255,.7);
+}
+
+.skill-card:hover,
+.project-card:hover{
+box-shadow:0 0 30px rgba(0,229,255,.3);
+}
+
+/* GLASS EFFECT */
+
+.skill-card,
+.project-card,
+.about-content{
+
+border:1px solid rgba(255,255,255,.1);
+
+}
 .loading-bar span{
 display:block;
 height:100%;
